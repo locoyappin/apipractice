@@ -1,9 +1,12 @@
-fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
-  .then(response => response => {
-  if(response.ok){
-      throw new Error("Could not fetch resource");
+async function fetchData(){
+
+  try{
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/typhlosion");
+    if(!rsponse.ok){
+      
+    }
   }
-  return response.json
-  })
-  .then(data => console.log(data))
-  .catch(error => console.error(erorr));
+  catch(error){
+    console.error(error);
+  }
+}
